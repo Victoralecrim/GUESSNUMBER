@@ -1,0 +1,78 @@
+@use 'mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+}
+
+/* Header ============*/
+header {
+    @include mixins.header;
+}
+
+header a h1 {
+    @include mixins.header2;
+}
+
+/* Container =================== */
+.container {
+    @include mixins.container;
+}
+
+/* Form ================= */
+.container form {
+    @include mixins.containerForm;
+}
+
+.container form label {
+    @include mixins.containerFormLabel;
+}
+
+.container form input {
+    @include mixins.containerFormInput;
+}
+
+.container form input:focus {
+    @include mixins.containerFormInputFocus;
+}
+
+.container form button {
+    @include mixins.containerformbutton;
+}
+
+.container form button:hover {
+    @include mixins.containerFormButtonHover;
+}
+
+/* Section =============== */
+.container .result-box {
+    @include mixins.containerResult-box;
+}
+
+.container .result-box h2 {
+    @include mixins.containerResult-boxh2;
+}
+
+.container .result-box span {
+    @include mixins.containerResult-boxSpan;
+}
+
+/* Btn jogar de novo ================ */
+.container #btnRestart {
+    @include mixins.containerRestart;
+}
+
+.container #btnRestart:hover {
+    @include mixins.containerRestartHover;
+}
+
+footer {
+    @include mixins.Rodape;
+}
+
+footer p {
+    @include mixins.FOOTERp;
+}
